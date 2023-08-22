@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px; 
+    letter-spacing: 1pt;
+    font-weight:bold; 
+    color: #a1a8d8; 
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: #0c2942;
+    
+    /* margin-bottom: 10px; Add space below the heading */
+  }
+
+h3 {
+    text-align: center;
+    font-size: 18px; 
+    font-weight:normal; 
+    color: #666; 
+    margin-top: 0px;
+    margin: bottom 0px;
+    background-color: #eaf1f8;
+    /* margin-top: 10px; /* Add space above the heading */
+    /* margin-bottom: 5px; /* Add space below the heading */
+  }
+
+/* p {
+    text-align: center;
+    width: 500px;
+    font-size: 12px; 
+    margin-top: 0px;
+    margin-left:330px;
+    margin-bottom: 0px;
+    font-weight:normal; 
+    color: #666;   
+} */
+
+.dashboard {
+    position: relative;
+    top: 40px; left: 40px; /* Set the position of the container as relative */
+    max-width: 100%;
+}
+
+.image-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(68, 30, 30, 0.7); /* Background color for the overlay */
+    color: #402222; /* Text color */
+    padding: 10px;
+    display: none; /* Initially hidden */
+}
+
+.sensor {
+    position:relative;
+    /* top: 10px; left: 500px; */
+    width: 25px;
+    height: auto;
+    background-color: #f3eded;
+    /* border-radius: 100%; */
+    text-align:justify;
+    color: rgb(106, 41, 225);
+    font-weight: bold;
+}
+
+.pos1{
+    top: -25px;
+    left:500px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+    }
+
+.pos2{
+    top: -56px;
+    left:710px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+.pos3{
+    top: -25px;
+    left:770px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+.pos4{
+    top: 160px;
+    left:770px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+.pos5{
+    top:205px;
+    left:710px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+.pos6{
+    top: 175px;
+    left:505px;
+    padding: 5px 20px; /* Adjust padding to control button size */
+    background-color: #0c2942; /* Background color */
+    color: #bdc6ea; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+/* .Pnumatic-conv-image {
+    position: absolute;
+    left: 50px;
+    text-align: center;
+    opacity: 0.9; /* opacity */
+    /* max-width: 100%;
+    height: auto; /*  "auto"  Maintain aspect ratio */
+    /* width: 85%; /* Ensure the image takes the entire width of its container */
+    /* border: 1px solid #525050; 
+    border-radius: 30px; /* Adds rounded corners */
+/* } */ 
+.Pnumatic-conv-image {
+    position: absolute; /* Set the position to absolute */
+    left: 80px; /* Adjust the left position as needed */
+    top: -50px; /* Adjust the top position as needed */
+    opacity: 0.9;
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+    /* border: 1px solid #525050;
+    border-radius: 30px; */
+}
+
+.overlay-text{
+    position:relative;
+    /* width: 200px; */
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+    z-index: index 2; /* Ensure it's above other elements */
+    border: 1px solid #939393;
+    border-radius: 20px;
+    border-bottom: 10px solid #5669e6;
+    padding: 20px;
+    top: -220px;
+    left: 150px;
+    font-size: smaller;
+    text-align:center;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .overlay-text {
+        width: 100px; /* Adjust width for smaller screens */
+        max-width: none; /* Remove the maximum width */
+        border-radius: 10px; /* Adjust border radius */
+        font-size: smaller; /* Adjust font size */
+        top: -220px;
+        left: 100px; /* Reset the left position */
+        font-size:5pt;
+        text-align:center;
+        padding: 5px;
+    }
+}
